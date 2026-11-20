@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christophe Dura vous parle</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Christophe Dura, manager commercial à Toulouse : une vidéo de 5 minutes, mes schémas et mon édito. Je vends, et je fais vendre. Je change de surface, pas de métier.">
+<meta property="og:title" content="Christophe Dura vous parle">
+<meta property="og:description" content="Je vends, et je fais vendre. Je change de surface, pas de métier. Une vidéo de 5 minutes et mon édito.">
+<meta property="og:image" content="img/partage.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F4EEE5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --paper:#F4EEE5; --paper2:#EBE2D5; --card:#FBF8F3;
+  --ink:#1B2A44; --ink2:#3E4B62; --muted:#6B7385;
+  --copper:#9B5527; --copper2:#B86C38; --line:#DCCFBE;
+  --navy:#16233A; --navy2:#22324F; --cream-on-navy:#EFE6D8;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --gut:max(20px,env(safe-area-inset-left,0px));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.65 var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:var(--copper);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--copper2)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gut);padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font:700 13px/1.2 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--copper);margin:0 0 18px}
+h1,h2,h3{font-family:var(--sans);color:var(--ink);text-wrap:balance;margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 var(--sans);padding:15px 22px;border-radius:999px;text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:transparent;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-1px);background:var(--ink);color:var(--paper)}
+.btn.fill{background:var(--copper);border-color:var(--copper);color:#fff}
+.btn.fill:hover{background:var(--copper2);border-color:var(--copper2);color:#fff}
+.btn.light{border-color:var(--cream-on-navy);color:var(--cream-on-navy)}
+.btn.light:hover{background:var(--cream-on-navy);color:var(--navy)}
+
+/* progression */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--copper);z-index:60}
+
+/* barre du haut */
+.top{position:sticky;top:0;z-index:50;background:rgba(244,238,229,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{font:800 17px/1 var(--sans);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.brand span{color:var(--copper)}
+.top nav{display:flex;align-items:center;gap:26px}
+.top nav a{font:600 14px/1 var(--sans);color:var(--ink2);text-decoration:none}
+.top nav a:hover{color:var(--copper)}
+.top .btn{padding:11px 18px;font-size:14px}
+
+/* héros */
+.hero{padding:72px 0 88px}
+.hero .hgrid{display:grid;grid-template-columns:1.35fr .9fr;gap:64px;align-items:center}
+.hero h1{font-weight:800;font-size:clamp(42px,6.2vw,80px);line-height:1.02;letter-spacing:-.035em}
+.hero .lead{font:500 clamp(20px,2.2vw,26px)/1.35 var(--sans);color:var(--ink2);margin:26px 0 0;max-width:30ch}
+.hero .who{font:600 15px/1.5 var(--sans);color:var(--muted);margin:30px 0 34px}
+.hero .who b{color:var(--ink)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{position:relative;justify-self:end;width:100%;max-width:400px}
+.portrait img{width:100%;height:auto;border-radius:6px;aspect-ratio:1;object-fit:cover;position:relative;z-index:1}
+.portrait::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--copper);border-radius:6px}
+.stamp{position:absolute;z-index:2;left:-34px;bottom:34px;background:var(--navy);color:var(--cream-on-navy);font:800 13px/1.25 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:16px 18px;border-radius:4px;box-shadow:0 14px 30px -14px rgba(22,35,58,.55)}
+.stamp em{display:block;font-style:normal;color:#E3B488;font-size:11px;letter-spacing:.2em;margin-bottom:4px}
+.proofs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:72px;border-top:1px solid var(--line)}
+.proofs div{padding:22px 18px 0 0;min-width:0}
+.proofs b{display:block;font:800 clamp(26px,3vw,36px)/1 var(--sans);color:var(--copper);letter-spacing:-.02em}
+.proofs span{display:block;font:500 14px/1.4 var(--sans);color:var(--ink2);margin-top:8px}
+
+/* vidéo */
+.video{background:var(--navy);color:var(--cream-on-navy);padding:96px 0}
+.video .eyebrow{color:#E3B488}
+.video h2{color:#fff;font-weight:800;font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.025em;max-width:22ch}
+.video .sub{font:500 18px/1.5 var(--sans);color:#C9C2B6;margin:16px 0 40px;max-width:58ch}
+.vgrid{display:grid;grid-template-columns:1.7fr .8fr;gap:44px;align-items:start}
+.player{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#0D1626;box-shadow:0 30px 60px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.06)}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player-alt{font:500 13px/1.4 var(--sans);color:#9AA3B4;margin-top:12px}
+.player-alt a{color:#E3B488}
+.chapters{list-style:none;margin:0;padding:0;counter-reset:c}
+.chapters li{counter-increment:c;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:16px 0;border-top:1px solid rgba(239,230,216,.14)}
+.chapters li:first-child{border-top:0;padding-top:0}
+.chapters li::before{content:counter(c,decimal-leading-zero);font:800 13px/1.6 var(--sans);color:#E3B488;letter-spacing:.06em}
+.chapters b{display:block;font:700 16px/1.35 var(--sans);color:#fff}
+.chapters span{display:block;font:400 15px/1.45 var(--sans);color:#B9B2A6;margin-top:3px}
+.video .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+/* triangle */
+.tri{padding:96px 0 40px}
+.tri h2,.sch h2,.edito-head h2{font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.025em}
+.tri .fig{margin:40px 0 0}
+.tri-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.tri-cards div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px;min-width:0}
+.tri-cards b{display:block;font:800 18px/1.25 var(--sans)}
+.tri-cards span{display:block;font:500 15px/1.45 var(--sans);color:var(--ink2);margin-top:6px}
+.tri-cards i{display:block;font:700 14px/1.4 var(--sans);font-style:normal;color:var(--copper);margin-top:10px}
+
+/* schémas */
+.sch{padding:72px 0 96px}
+.sch .txt{max-width:66ch;color:var(--ink2);margin-top:18px}
+.sch .txt p{margin:0 0 14px}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 18px 20px;min-width:0}
+.scard .fig{margin:0}
+.scard h3{font:800 18px/1.3 var(--sans);margin:16px 4px 4px}
+.scard p{font:500 15px/1.45 var(--sans);color:var(--ink2);margin:0 4px}
+.fig a{display:block;border-radius:6px;overflow:hidden;cursor:zoom-in}
+.fig img{width:100%;height:auto;transition:transform .35s}
+.fig a:hover img{transform:scale(1.015)}
+.fig figcaption{font:500 13px/1.4 var(--sans);color:var(--muted);margin-top:10px}
+.zoom{font:700 13px/1 var(--sans);color:var(--copper);text-decoration:none;display:inline-block;margin:12px 4px 0}
+
+/* édito */
+.edito{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:96px 0}
+.edito-head{max-width:760px}
+.edito-head .lede{font:400 21px/1.6 var(--serif);color:var(--ink2);margin-top:24px}
+.edito-head .lede p{margin:0 0 16px}
+.edito-head .lede p:first-child::first-letter{float:left;font:800 72px/.82 var(--sans);color:var(--copper);margin:8px 12px 0 0}
+.egrid{display:grid;grid-template-columns:260px minmax(0,1fr);gap:64px;margin-top:56px;align-items:start}
+.toc{position:sticky;top:88px;max-height:calc(100vh - 110px);overflow:auto;font-family:var(--sans);padding-right:6px}
+.toc summary{display:none}
+.toc ol{list-style:none;margin:0;padding:0}
+.toc .tc{margin-bottom:22px}
+.toc .tc>span{display:block;font:800 11px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--copper);margin-bottom:8px}
+.toc .tc li a{display:block;font:500 14px/1.35 var(--sans);color:var(--ink2);text-decoration:none;padding:5px 0 5px 12px;border-left:2px solid var(--line)}
+.toc .tc li a:hover{color:var(--ink)}
+.toc .tc li a.on{color:var(--ink);font-weight:700;border-left-color:var(--copper)}
+article{max-width:720px;min-width:0}
+article .chap{font:800 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:72px 0 0;padding-top:28px;border-top:1px solid var(--line)}
+article .chap:first-child{margin-top:0}
+article section{margin-top:44px}
+article h2{font-weight:800;font-size:clamp(24px,2.6vw,31px);line-height:1.18;letter-spacing:-.02em;margin-bottom:18px}
+article p{margin:0 0 18px}
+article strong{font-weight:600;color:var(--ink)}
+article ul,article ol{margin:0 0 20px;padding-left:22px}
+article li{margin-bottom:8px}
+article li::marker{color:var(--copper)}
+article .fig{margin:28px 0}
+.tbl{overflow-x:auto;margin:24px 0 26px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font:500 15px/1.45 var(--sans)}
+th{font:800 12px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--copper);text-align:left;padding:14px 16px;background:var(--paper2);border-bottom:1px solid var(--line)}
+td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+tr:first-child td{border-top:0}
+td strong{color:var(--ink);font-weight:700}
+article .sources{font-size:15px;color:var(--muted)}
+article .sources h2{font-size:18px}
+
+/* fin */
+.end{background:var(--navy);color:var(--cream-on-navy);padding:96px 0 40px}
+.end h2{color:#fff;font-weight:800;font-size:clamp(30px,4.2vw,52px);line-height:1.06;letter-spacing:-.03em;max-width:20ch}
+.end .q{font:400 italic 21px/1.5 var(--serif);color:#D7CEC0;max-width:52ch;margin:20px 0 36px}
+.end .cta{display:flex;flex-wrap:wrap;gap:12px}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px;padding-top:28px;border-top:1px solid rgba(239,230,216,.16)}
+.contact div{min-width:0}
+.contact span{display:block;font:800 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#E3B488;margin-bottom:10px}
+.contact a,.contact p{font:600 17px/1.4 var(--sans);color:#fff;text-decoration:none;margin:0;overflow-wrap:anywhere}
+.contact a:hover{color:#E3B488}
+.foot{font:500 13px/1.5 var(--sans);color:#8E97A8;margin-top:56px}
+.totop{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:40;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-decoration:none;font:700 18px/1 var(--sans);opacity:0;pointer-events:none;transition:opacity .2s}
+.totop.show{opacity:1;pointer-events:auto}
+
+/* apparition */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* mobile */
+@media (max-width:980px){
+  .hero .hgrid,.vgrid,.egrid{grid-template-columns:1fr}
+  .hero{padding:44px 0 64px}
+  .portrait{justify-self:start;max-width:320px;margin:8px 0 0 4px}
+  .proofs{grid-template-columns:repeat(2,1fr);row-gap:18px}
+  .toc{position:static;max-height:none;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:0}
+  .toc summary{display:block;cursor:pointer;font:800 14px/1 var(--sans);padding:16px 18px;color:var(--ink);list-style:none}
+  .toc summary::after{content:" ▾";color:var(--copper)}
+  .toc>div{padding:0 18px 6px}
+  .egrid{gap:28px;margin-top:36px}
+}
+@media (max-width:760px){
+  body{font-size:17px}
+  .top nav a:not(.btn){display:none}
+  .sgrid,.tri-cards,.contact{grid-template-columns:1fr}
+  .video,.edito,.end{padding:64px 0}
+  .tri{padding-top:64px}
+  .stamp{left:auto;right:-6px;bottom:-14px}
+  .edito-head .lede{font-size:19px}
+}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#accueil">Christophe <span>Dura</span></a>
+    <nav aria-label="Navigation">
+      <a href="#video">La vidéo</a>
+      <a href="#schemas">Les schémas</a>
+      <a href="#edito">L'édito</a>
+      <a class="btn fill" href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 min</a>
+    </nav>
+  </div>
+</header>
+
+<main id="accueil">
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="rv">
+      <p class="eyebrow">Un métier · Des outils · Un réseau</p>
+      <h1>Je vends,<br>et je fais vendre.</h1>
+      <p class="lead">Je change de surface, pas de métier.</p>
+      <p class="who"><b>Christophe Dura</b> · Manager commercial · Toulouse et Sud-Ouest</p>
+      <div class="cta">
+        <a class="btn fill" href="#video">▶&nbsp; Voir la vidéo · 5 min</a>
+        <a class="btn" href="#edito">Lire l'édito</a>
+      </div>
+    </div>
+    <div class="portrait rv">
+      <img src="img/christophe-dura.jpg" alt="Portrait de Christophe Dura" width="700" height="700">
+      <div class="stamp"><em>Au centre</em>Je produis vite</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="proofs rv">
+      <div><b>12 ans</b><span>à la tête d'entreprises</span></div>
+      <div><b>+40 %</b><span>par an, en équipe et en chiffre d'affaires</span></div>
+      <div><b>× 5</b><span>chiffre d'affaires de CD2I, en 8 ans</span></div>
+      <div><b>Top 10</b><span>sur 100 conseillers chez Allianz</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="video" id="video">
+  <div class="wrap">
+    <p class="eyebrow">La vidéo · 5 minutes</p>
+    <h2>« Vous ne venez pas de notre secteur. » Ma réponse, en 5 minutes.</h2>
+    <p class="sub">Le tennis reste le même, la surface change. Je vous montre mon métier, mes outils et mon réseau, et ce que vous verrez dès le premier mois.</p>
+    <div class="vgrid">
+      <div>
+        <div class="player">
+          <iframe src="https://www.loom.com/embed/4b7c871a4d1a4a5496ccbd6d69e58b2b?hide_owner=true&amp;hide_share=true&amp;hide_title=true&amp;hideEmbedTopBar=true" title="Christophe Dura · Manager commercial (vidéo de 5 minutes)" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="player-alt">La vidéo ne s'affiche pas ? <a href="https://www.loom.com/share/4b7c871a4d1a4a5496ccbd6d69e58b2b" target="_blank" rel="noopener">Ouvrez-la sur Loom</a>.</p>
+      </div>
+      <div>
+        <ol class="chapters">
+          <li><div><b>Un métier</b><span>Recruter, former, faire vendre, gérer.</span></div></li>
+          <li><div><b>Multisurface</b><span>Bureautique, investissement, financement, assurance, services juridiques. Puis la vôtre.</span></div></li>
+          <li><div><b>Des outils</b><span>Mes radars et ma pile d'appels du matin, construits par moi.</span></div></li>
+          <li><div><b>Un réseau</b><span>Des milliers de dirigeants en Occitanie. Je les rappelle moi-même.</span></div></li>
+          <li><div><b>Le premier mois</b><span>Ce que vous verrez, semaine par semaine.</span></div></li>
+        </ol>
+        <div class="cta">
+          <a class="btn fill" href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 minutes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tri" id="triangle">
+  <div class="wrap">
+    <p class="eyebrow rv">Mon triangle</p>
+    <h2 class="rv">Trois pointes, un résultat au centre.</h2>
+    <div class="tri-cards rv">
+      <div><b>1 · Un métier</b><span>Recruter, former, faire vendre, gérer.</span><i>Opérationnel dès le premier jour.</i></div>
+      <div><b>2 · Des outils</b><span>Construits par moi, et 8 ans de compte de résultat.</span><i>L'équipe sait qui appeler.</i></div>
+      <div><b>3 · Un réseau</b><span>Des milliers de contacts en Occitanie.</span><i>Des rendez-vous dès la première semaine.</i></div>
+    </div>
+  </div>
+</section>
+
+<section class="sch" id="schemas">
+  <div class="wrap">
+    <p class="eyebrow rv">Les schémas</p>
+    <h2 class="rv">Tout ce que je couvre, en un coup d'œil.</h2>
+    <div class="txt rv"><p>Au centre, le résultat : je produis vite. Autour, quatre cercles : mon métier, mes outils, la conformité et la sécurité, puis mon réseau. Tout autour, les surfaces sur lesquelles j'ai déjà joué.</p>
+<p>Un mot sur le cercle vert. Je ne suis ni juriste, ni expert en cybersécurité. Je me suis formé auprès de l'ANSSI, et j'applique ces règles à la vente : une prospection documentée, des données protégées, une équipe sensibilisée aux risques. Pour une entreprise, c'est un risque en moins.</p>
+<p><strong>Le détail, sans rien oublier.</strong> Chaque cercle, ouvert en entier : 20 savoir-faire de métier, 23 outils, 11 points de conformité et de sécurité, 13 cercles de réseau.</p></div>
+    <div class="sgrid">
+      <div class="scard rv">
+        <figure class="fig"><a href="img/metiers.jpg" target="_blank" rel="noopener" aria-label="Agrandir le grand cercle"><img src="img/metiers.jpg" alt="Tous les métiers que couvre Christophe Dura : un métier, des outils, la conformité et la sécurité, un réseau, et les surfaces déjà jouées" loading="lazy" width="1600" height="2060"></a></figure>
+        <h3>Le grand cercle</h3>
+        <p>Mon métier au cœur, puis mes outils, la conformité, mon réseau. Tout autour, les surfaces déjà jouées.</p>
+        <a class="zoom" href="img/metiers.jpg" target="_blank" rel="noopener">Agrandir ↗</a>
+      </div>
+      <div class="scard rv">
+        <figure class="fig"><a href="img/boite-complete.jpg" target="_blank" rel="noopener" aria-label="Agrandir la boîte complète"><img src="img/boite-complete.jpg" alt="Ma boîte complète : 20 savoir-faire, 23 outils, 11 points de conformité et de sécurité, 13 cercles de réseau, autour de « je produis vite »" loading="lazy" width="1600" height="1820"></a></figure>
+        <h3>Ma boîte complète</h3>
+        <p>Chaque cercle ouvert en entier : 20 savoir-faire, 23 outils, 11 points de conformité, 13 cercles de réseau.</p>
+        <a class="zoom" href="img/boite-complete.jpg" target="_blank" rel="noopener">Agrandir ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edito" id="edito">
+  <div class="wrap">
+    <div class="edito-head rv">
+      <p class="eyebrow">L'édito</p>
+      <h2>Christophe Dura vous parle.</h2>
+      <div class="lede"><p><strong>Je vends, et je fais vendre. Je change de surface, pas de métier.</strong> Voici ce que j'apporte à une entreprise qui veut grandir, tenir et s'adapter.</p></div>
+    </div>
+    <div class="egrid">
+      <details class="toc" id="toc" open>
+        <summary>Sommaire de l'édito</summary>
+        <div><ol><li class="tc"><span>I · Qui je suis</span><ol><li><a href="#pourquoi-je-vous-ecris">Pourquoi je vous écris</a></li><li><a href="#le-marche-en-quatre-chiffres">Le marché, en quatre chiffres</a></li><li><a href="#croissance-ce-que-je-fais-grandir">Croissance : ce que je fais grandir</a></li><li><a href="#survie-ce-que-2021-m-a-appris">Survie : ce que 2021 m&#x27;a appris</a></li><li><a href="#adaptation-je-change-de-surface-pas-de-metier">Adaptation : je change de surface, pas de métier</a></li></ol></li><li class="tc"><span>II · Mon triangle</span><ol><li><a href="#mon-triangle-un-metier-des-outils-un-reseau">Mon triangle : un métier, des outils, un réseau</a></li><li><a href="#focus-sur-la-1re-pointe-mon-metier">1 · mon métier</a></li><li><a href="#focus-sur-la-2e-pointe-mes-outils-et-ma-vision-b">2 · mes outils et ma vision business</a></li><li><a href="#focus-sur-la-3e-pointe-mon-reseau-ma-vraie-donne">3 · mon réseau, ma vraie donnée</a></li></ol></li><li class="tc"><span>III · Ce que j’apporte</span><ol><li><a href="#ce-que-vous-verrez-des-le-premier-mois">Ce que vous verrez dès le premier mois</a></li><li><a href="#moi-et-l-intelligence-artificielle">Moi et l&#x27;intelligence artificielle</a></li><li><a href="#ma-boite-a-outils-en-entier">Ma boîte à outils, en entier</a></li><li><a href="#les-metiers-que-je-couvre">Les métiers que je couvre</a></li></ol></li><li class="tc"><span>IV · Mon parcours</span><ol><li><a href="#mon-parcours-annee-par-annee">Mon parcours, année par année</a></li><li><a href="#ce-que-je-suis-ce-que-je-ne-suis-pas">Ce que je suis, ce que je ne suis pas</a></li><li><a href="#ce-que-je-cherche">Ce que je cherche</a></li><li><a href="#langues-formation-qualifications">Langues, formation, qualifications</a></li><li><a href="#pour-aller-plus-loin">Pour aller plus loin</a></li><li><a href="#le-mot-de-la-fin">Le mot de la fin</a></li><li><a href="#sources-des-chiffres">Sources des chiffres</a></li></ol></li></ol></div>
+      </details>
+      <article>
+<p class="chap" aria-hidden="true">I · Qui je suis</p>
+<section id="pourquoi-je-vous-ecris"><h2>Pourquoi je vous écris</h2><p>Nous nous sommes parlé, et vous avez mon CV. Un CV dit ce que j'ai fait. Il ne dit pas comment je travaille, ni tout ce qui m'a construit.</p>
+<p>Ici, je vous raconte tout, avec des faits et des dates : mes réussites, mes décisions, et 2021. Tout cela fait partie de mon parcours.</p>
+<p>Je suis un vendeur qui a appris à faire vendre les autres. J'ai passé 12 ans à la tête d'entreprises : j'ai recruté, vendu, géré et négocié. Aujourd'hui, je veux mettre ce métier au service d'une équipe, pour plusieurs années.</p></section>
+<section id="le-marche-en-quatre-chiffres"><h2>Le marché, en quatre chiffres</h2><p>En 2026, une entreprise doit à la fois tenir, grandir et s'adapter. Quatre chiffres le montrent.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Le chiffre</th>
+<th>Ce qu'il dit</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>70 766</strong></td>
+<td>Défaillances d'entreprises en 12 mois, à fin août 2026. C'est 19,3 % de plus que la moyenne 2010-2019.</td>
+<td><a href="https://www.banque-france.fr/fr/statistiques/entreprises/defaillances-dentreprises-2026-08" target="_blank" rel="noopener">Banque de France</a>, octobre 2026</td>
+</tr>
+<tr>
+<td><strong>4 sur 10</strong></td>
+<td>39,9 % des 22 100 recrutements d'attachés commerciaux prévus en 2026 sont jugés difficiles par les employeurs.</td>
+<td><a href="https://statistiques.francetravail.org/bmo/bmo?fe=R2X80&amp;lc=0&amp;pp=2026&amp;ss=1" target="_blank" rel="noopener">France Travail, enquête BMO 2026</a></td>
+</tr>
+<tr>
+<td><strong>294 500</strong></td>
+<td>Embauches de cadres en 2025, en recul de 3 % sur un an. L'Apec en attend un peu plus de 300 000 en 2026.</td>
+<td><a href="https://www.apec.fr/tendances-emploi-cadre/recrutement-et-pratiques-rh/plus-de-300-000-recrutements-de-cadres-en-2026,-sauf-si-.html" target="_blank" rel="noopener">Apec</a>, juillet 2026</td>
+</tr>
+<tr>
+<td><strong>18 %</strong></td>
+<td>Part des entreprises de 10 salariés ou plus qui utilisent l'intelligence artificielle en 2025. Elles étaient 10 % en 2024 et 6 % en 2023.</td>
+<td><a href="https://www.insee.fr/fr/statistiques/9025878" target="_blank" rel="noopener">Insee</a>, juillet 2026</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ce que j'en retiens :</p>
+<ul>
+<li><strong>Tenir n'est plus acquis.</strong> Une défaillance n'est plus une exception.</li>
+<li><strong>Trouver des gens qui vendent reste difficile.</strong> Quatre recrutements de commerciaux sur dix sont jugés difficiles.</li>
+<li><strong>Chaque recrutement compte.</strong> Celui qui arrive doit produire vite.</li>
+<li><strong>L'outil change.</strong> Huit entreprises sur dix n'utilisent pas encore l'IA.</li>
+</ul>
+<p>Où je me situe : je ne suis pas le candidat qui vient de votre secteur. Je suis celui qui a déjà fait grandir une équipe, déjà traversé une défaillance, et déjà changé de marché.</p></section>
+<section id="croissance-ce-que-je-fais-grandir"><h2>Croissance : ce que je fais grandir</h2><p>Je fais grandir une activité commerciale sans perdre le contrôle de l'organisation ni du résultat. Trois preuves.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Où</th>
+<th>Ce que j'ai fait</th>
+<th>Le résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Finexial</strong> (2007-2012)</td>
+<td>J'ai recruté 50 agents indépendants et 5 managers.</td>
+<td>Les ventes sont passées de 20 à 100.</td>
+</tr>
+<tr>
+<td><strong>CD2I</strong> (2013-2021)</td>
+<td>J'ai dirigé un centre de profit : jusqu'à 25 commerciaux, un plateau de 12 téléopérateurs, 2 implantations.</td>
+<td>Le chiffre d'affaires est passé de 200 000 € à 1 M€. +50 % de rendez-vous qualifiés en 18 mois.</td>
+</tr>
+<tr>
+<td><strong>Allianz</strong> (2023-2025)</td>
+<td>J'ai prospecté des dirigeants, sans portefeuille de départ.</td>
+<td>Top 10 sur 100 conseillers. Objectif de 950 k€ par quadrimestre dépassé la première année.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tout a commencé sur le terrain. Chez Crédit Agricole Immobilier (1999-2002), j'ai signé <strong>plus de 150 ventes</strong> à des investisseurs. J'y ai appris qu'une vente se gagne sur la confiance, bien avant la signature.</p>
+<p>La croissance n'est jamais venue par hasard. Chez Finexial, le mécanisme était simple : recruter chaque année, puis faire monter les recrues en puissance. Résultat : <strong>+40 % par an, pendant 6 ans</strong>. Chez CD2I, j'ai appliqué la même mécanique à ma propre structure.</p>
+<p>Ma méthode tient en trois gestes :</p>
+<ol>
+<li><strong>Je recrute d'abord l'envie.</strong> On peut apprendre à mieux vendre à quelqu'un. On ne peut pas avoir envie à sa place.</li>
+<li><strong>Je pose le cadre dès le premier jour.</strong> J'aime les gens, et je sais me faire respecter.</li>
+<li><strong>J'emmène la recrue en rendez-vous.</strong> Puis je la laisse prendre la main, en binôme avec un ancien.</li>
+</ol>
+<p>Je suis un manager de terrain. J'entraîne par l'exemple : je prospecte moi-même, jusqu'à 150 appels par jour.</p>
+<p><strong>Une histoire de terrain : comment j'ai gagné mes prescripteurs.</strong> Chez CD2I, je voulais que des experts-comptables et des notaires m'envoient leurs clients. Je n'ai pas commencé par leur vendre quelque chose. J'ai traité avec un soin particulier les premiers clients qu'ils m'ont confiés. Ensuite, je les ai entretenus : un appel, un déjeuner, en m'intéressant à eux et pas seulement aux affaires. Au bout du compte, plus de 50 prescripteurs apportaient 40 % du chiffre d'affaires. La leçon vaut pour tout réseau : la confiance se gagne sur le premier dossier.</p>
+<p><strong>Trois décisions de manager.</strong> Un manager se juge à ses décisions, pas à son activité. En voici trois.</p>
+<p><strong>1 · Organiser : créer des relais.</strong> Chez Finexial, en 2007, le réseau était à construire presque de zéro. J'aurais pu piloter chaque agent en direct. J'ai choisi de créer un niveau de 5 managers, que j'ai choisis et recrutés moi-même, avec une rémunération revue et des points réguliers. Résultat : 50 agents indépendants, et +40 % par an. La leçon : un réseau ne grandit pas autour d'un seul homme. Il grandit avec des relais choisis et pilotés.</p>
+<p><strong>2 · Recadrer, sans casser.</strong> Chez CD2I, l'attitude d'un responsable de pôle pénalisait son équipe. Je l'ai d'abord accompagné : des objectifs, un suivi. Puis j'ai fixé un cap clair, avec un délai. Il s'est redressé, il est resté, et l'équipe a mieux travaillé ensuite.</p>
+<p><strong>3 · Faire grandir un débutant.</strong> Chez CD2I, j'ai pris un débutant en binôme, sur le terrain, avec des objectifs et des points réguliers. Ses résultats ont nettement progressé. Il est devenu autonome, et je lui ai confié plus de responsabilités. Ma méthode : je montre, je laisse faire, puis je confie.</p>
+<p><strong>Vous y gagnez :</strong> un manager opérationnel dès le premier jour, qui recrute, forme et fait produire.</p></section>
+<section id="survie-ce-que-2021-m-a-appris"><h2>Survie : ce que 2021 m&#x27;a appris</h2><p>En 2021, j'ai traversé une défaillance d'entreprise. Il y en a aujourd'hui 70 766 par an. Elle fait partie de mon parcours, au même titre que mes réussites. Je vous la raconte telle qu'elle s'est passée.</p>
+<p><strong>Les faits.</strong> J'ai dirigé CD2I pendant 8 ans. En 2020, le Covid a gelé mon marché, et mes prescripteurs ont apporté moins d'affaires. Je n'ai pas demandé de prêt garanti par l'État. J'ai accumulé près de deux ans de retard de trésorerie, et j'ai arrêté. Une entreprise qui grandit peut aussi tomber : cela fait partie du jeu quand on entreprend. Les suites financières, elles, durent plus longtemps que l'entreprise.</p>
+<p><strong>Ce que vous verrez en tapant mon nom.</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Ce que vous verrez</th>
+<th>La date</th>
+<th>Ce que c'est</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CD2I</strong> (Toulouse)</td>
+<td>Liquidation en octobre 2021, radiation en avril 2022</td>
+<td>La société que j'ai dirigée pendant 8 ans. C'est la défaillance d'origine.</td>
+</tr>
+<tr>
+<td><strong>CD2I Paris XV</strong></td>
+<td>Liquidation judiciaire simplifiée ouverte en juin 2025</td>
+<td>Mon entreprise individuelle, sous la marque CD2I Paris XV. J'y menais aussi, en marque blanche, la commercialisation pour Wealth A7. Les suites financières de 2021 l'ont rattrapée.</td>
+</tr>
+<tr>
+<td><strong>Une société de mission</strong></td>
+<td>Créée puis dissoute en 2026</td>
+<td>Une société créée pour une mission auprès d'un cabinet d'avocats. Je l'ai dissoute à la fin de la mission.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ces trois lignes ne racontent pas trois échecs. Elles racontent une seule défaillance, celle de 2021, et ses suites dans le temps. Je ne cherche ni à effacer cette période, ni à nier ma part de responsabilité.</p>
+<p><strong>Ce que j'ai continué à faire.</strong> Chez Wealth A7, j'ai recruté et animé 6 agents. Chez Allianz, en CDI, je suis entré dans le Top 10 sur 100 conseillers. Pour un cabinet d'avocats, j'ai construit puis transmis une organisation commerciale.</p>
+<p><strong>Et avoir un patron ?</strong> C'est la question que l'on se pose devant un ancien gérant. J'y ai déjà répondu, dans les faits. En 2023, j'ai choisi le salariat chez Allianz : des objectifs, un reporting, les règles d'un grand groupe. J'y suis entré dans le Top 10. Je sais entrer dans un cadre quand je m'engage. Ce que je cherche aujourd'hui, c'est la durée.</p>
+<p><strong>Ce que j'en ai tiré pour vous.</strong></p>
+<ul>
+<li>Je regarde la trésorerie et l'encaissement, pas seulement le chiffre d'affaires.</li>
+<li>Je sais relancer un impayé, et négocier avec une banque ou un fournisseur.</li>
+<li>Je calcule le point mort d'un commercial avant de recruter.</li>
+<li>Je vois venir un décrochage plus tôt, parce que je l'ai vécu.</li>
+</ul>
+<p><strong>Vous y gagnez :</strong> un manager qui pilote le résultat, et qui sait ce que coûte une erreur.</p></section>
+<section id="adaptation-je-change-de-surface-pas-de-metier"><h2>Adaptation : je change de surface, pas de métier</h2><p>Je change de marché, pas de métier. Je sais la question que vous vous posez : réussira-t-il chez nous, alors qu'il ne vient pas de chez nous ?</p>
+<p>Au tennis, un joueur passe de la terre battue au gazon. Le jeu est le même, les rebonds changent. Je ne viens pas apprendre à jouer : je viens apprendre votre surface.</p>
+<p><strong>Je l'ai déjà fait.</strong> J'ai vendu de la bureautique chez Xerox, puis de l'investissement à des particuliers et à des dirigeants, puis du financement, puis de l'assurance. À chaque fois, le produit s'est appris. Le métier est resté : recruter, former, faire vendre.</p>
+<p><strong>Ce qui ne change pas d'une surface à l'autre.</strong> Mes ventes ont toujours été longues : plusieurs semaines ou plusieurs mois, souvent plusieurs décideurs, un fort enjeu pour le client. Je sais faire avancer une décision qui engage. Et je sais faire vendre des gens qui ne dépendent pas de moi : des agents indépendants, des prescripteurs, des partenaires.</p>
+<p><strong>J'arrive préparé.</strong> Depuis un an, je me forme à l'intelligence artificielle et je construis mes propres outils de vente. Ils ne remplacent pas le commercial : ils lui préparent sa journée.</p>
+<ul>
+<li>En une semaine, j'ai la carte de votre marché : qui appeler, où, et pourquoi.</li>
+<li>Chaque matin, l'équipe a sa liste d'appels utiles : les entreprises qui bougent, les rappels promis, les relances datées.</li>
+<li>Une alerte me dit quel commercial décroche, avant qu'il ne soit trop tard.</li>
+</ul>
+<p>Seules 18 % des entreprises utilisent déjà l'IA. Je m'en sers tous les jours, pour vendre. Mais la donnée reste un outil : mon métier, c'est l'équipe.</p>
+<p><strong>Vous y gagnez :</strong> quelqu'un qui produit vite, pendant qu'il apprend votre secteur.</p></section>
+<p class="chap" aria-hidden="true">II · Mon triangle</p>
+<section id="mon-triangle-un-metier-des-outils-un-reseau"><h2>Mon triangle : un métier, des outils, un réseau</h2><p>Tout ce que je viens d'écrire tient en trois mots : un métier, des outils, un réseau.</p>
+<figure class="fig"><a href="img/triangle.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite."><img src="img/triangle.jpg" alt="Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite." loading="lazy"></a></figure>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>La pointe</th>
+<th>Ce que j'apporte</th>
+<th>Vous y gagnez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Un métier</strong></td>
+<td>Recruter, former, faire vendre, gérer : 12 ans à la tête d'entreprises.</td>
+<td>Un manager opérationnel dès le premier jour.</td>
+</tr>
+<tr>
+<td><strong>2 · Des outils</strong></td>
+<td>Mes radars et mes programmes, construits par moi, et 8 ans de compte de résultat.</td>
+<td>Chaque matin, l'équipe sait qui appeler. Vous pilotez sur des faits.</td>
+</tr>
+<tr>
+<td><strong>3 · Un réseau</strong></td>
+<td>Des milliers de chefs d'entreprise et de particuliers en Occitanie. Plus de 50 prescripteurs animés chez CD2I.</td>
+<td>Des rendez-vous dès la première semaine.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Un mot sur mon réseau.</strong> Ce sont mes anciens clients et mes anciens prospects : je les ai rencontrés, ils me connaissent. Je ne transmets pas un fichier. Je les rappelle moi-même.</p>
+<p>Certains candidats ont le métier. D'autres ont des outils, ou un réseau. J'arrive avec les trois, et un résultat au centre : <strong>je produis vite.</strong></p></section>
+<section id="focus-sur-la-1re-pointe-mon-metier"><h2>Focus sur la 1re pointe : mon métier</h2><p>Je suis un vendeur qui a appris à faire vendre les autres. C'est la pointe qui porte les deux autres : sans le métier, un outil ne sert à rien, et un réseau s'use vite.</p>
+<p><strong>Mon métier en quatre verbes.</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Le verbe</th>
+<th>Comment je le fais</th>
+<th>Ma preuve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recruter</td>
+<td>Une journée de recrutement sur grille. Je cherche l'envie et l'esprit d'entrepreneur.</td>
+<td>50 agents et 5 managers recrutés chez Finexial, 6 agents chez Wealth A7.</td>
+</tr>
+<tr>
+<td>Former</td>
+<td>J'emmène la recrue en rendez-vous, puis je la mets en binôme avec un ancien. Elle est intégrée en 21 jours.</td>
+<td>Un débutant de CD2I devenu autonome, à qui j'ai confié plus de responsabilités.</td>
+</tr>
+<tr>
+<td>Faire vendre</td>
+<td>Des objectifs clairs, suivis par commercial. Je vends encore moi-même, pour montrer l'exemple.</td>
+<td>+40 % par an chez Finexial. Top 10 sur 100 chez Allianz.</td>
+</tr>
+<tr>
+<td>Gérer</td>
+<td>Le résultat, pas seulement le chiffre d'affaires : marge, trésorerie, point mort.</td>
+<td>8 ans de compte de résultat chez CD2I, chiffre d'affaires multiplié par 5.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Mon terrain de prédilection : le téléphone.</strong> J'ai toujours travaillé avec des équipes au téléphone, en prospection : un plateau de 30 téléopérateurs chez Finexial, puis de 12 chez CD2I. Ce que j'aime dans ce métier : fédérer des gens, fixer des objectifs, et les atteindre ensemble, autour du téléphone.</p>
+<p><strong>Ma semaine de manager.</strong></p>
+<ul>
+<li>Le lundi : la revue de la semaine. Ce qui a signé, ce qui bloque, les priorités.</li>
+<li>Chaque jour : la pile d'appels préparée, et l'écoute d'appels pour corriger sur le vif.</li>
+<li>Chaque semaine : un point fixe de 20 minutes avec chaque commercial, un seul axe de travail.</li>
+<li>Chaque mois : le point chiffré par commercial, et le point mort de chacun.</li>
+<li>Pour un nouveau secteur : un plan d'ouverture en 12 semaines.</li>
+</ul>
+<p><strong>Ce que je ne délègue pas.</strong> Le recrutement, et le premier rendez-vous avec chaque recrue. C'est là que se joue la suite.</p>
+<p>Vous y gagnez : un manager qui recrute, forme et fait produire dès le premier jour, et qui sait encore vendre.</p></section>
+<section id="focus-sur-la-2e-pointe-mes-outils-et-ma-vision-b"><h2>Focus sur la 2e pointe : mes outils et ma vision business</h2><p>Un outil ne vend pas. Il donne au commercial une raison d'appeler, et au manager des faits pour décider. C'est tout ce que je lui demande.</p>
+<p><strong>D'où ils viennent.</strong> Je les ai construits moi-même, depuis un an, avec l'intelligence artificielle. Je ne les ai pas achetés. Je les ai d'abord testés sur ma propre recherche d'emploi, chaque jour, en conditions réelles.</p>
+<p><strong>Ce qu'ils ont déjà produit.</strong> Des chiffres datés, sortis de mon usage réel :</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Le fait</th>
+<th>Ce que ça montre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>17 905 offres lues en une matinée, 61 retenues (11/11/2026)</td>
+<td>Trier vite, et ne garder que l'utile.</td>
+</tr>
+<tr>
+<td>26 entreprises qui recrutent fort, repérées en 60 jours (31/10/2026)</td>
+<td>Repérer les entreprises qui bougent, avant les autres.</td>
+</tr>
+<tr>
+<td>404 ventes et cessions d'entreprises, repérées en 90 jours sur 5 départements</td>
+<td>Trouver le bon moment pour appeler un dirigeant.</td>
+</tr>
+<tr>
+<td>325 relances possibles ramenées à 88 relances justes (novembre 2026)</td>
+<td>Rendre du temps à la vente.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Trois usages, un seul but : plus de temps en rendez-vous.</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Usage</th>
+<th>Ce que l'outil fait</th>
+<th>Ce que le commercial gagne</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repérer</td>
+<td>Il lit les signaux : cessions, recrutements, marchés, installations.</td>
+<td>Une raison juste d'appeler, pas un appel à froid.</td>
+</tr>
+<tr>
+<td>Agir chaque matin</td>
+<td>Il prépare la pile d'appels, les rappels promis, les relances datées.</td>
+<td>Il sait par où commencer à 8 h 30.</td>
+</tr>
+<tr>
+<td>Manager et piloter</td>
+<td>Il montre l'activité de la veille et alerte quand un commercial décroche.</td>
+<td>Un coaching au bon moment, pas trois mois trop tard.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>La vision business derrière les outils.</strong> J'ai tenu un compte de résultat pendant 8 ans. Je ne regarde donc pas seulement le nombre d'appels. Je regarde ce qui paie : le point mort d'un commercial, la marge d'une affaire, l'encaissement. Un outil qui ne fait pas gagner de l'argent ou du temps, je l'arrête.</p>
+<p><strong>Comment je les installe chez vous.</strong> Je commence petit : un radar sur votre zone, une pile d'appels pour l'équipe. On garde ce qui produit, on arrête le reste. Je m'adapte à vos outils. Les miens sont là si vous n'en avez pas.</p>
+<p><strong>Ce qu'ils ne sont pas.</strong> Ce n'est pas un logiciel que je vous vends. Ce n'est pas un envoi de masse automatique. Et ce n'est pas un remplacement du commercial : l'outil prépare, le commercial décide et garde le contact.</p>
+<p><strong>Le voir, plutôt que me croire.</strong> Je vous montre en 5 minutes, en visio, ce que mes outils trouvent sur votre zone. Les données montrées sont anonymes.</p>
+<p>Vous y gagnez : une équipe qui sait chaque matin qui appeler, et un manager qui pilote sur des faits.</p></section>
+<section id="focus-sur-la-3e-pointe-mon-reseau-ma-vraie-donne"><h2>Focus sur la 3e pointe : mon réseau, ma vraie donnée</h2><p>Un outil se construit en quelques mois. Un réseau se construit en une carrière. C'est la pointe du triangle qu'un autre candidat ne peut pas copier.</p>
+<p><strong>D'où il vient.</strong> J'ai commencé par vendre à des particuliers. Beaucoup d'entre eux étaient des dirigeants. Puis j'ai vendu directement aux chefs d'entreprise, et j'ai travaillé avec leurs conseils. Chaque poste a ajouté un cercle.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Le cercle</th>
+<th>Qui</th>
+<th>Où je l'ai construit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Les prescripteurs</td>
+<td>Experts-comptables, notaires, avocats, banquiers</td>
+<td>Plus de 50 animés chez CD2I, puis chez Wealth A7 et Allianz</td>
+</tr>
+<tr>
+<td>Les chefs d'entreprise</td>
+<td>Dirigeants de TPE et de PME d'Occitanie</td>
+<td>Allianz, Wealth A7, CD2I</td>
+</tr>
+<tr>
+<td>Les particuliers</td>
+<td>Investisseurs, souvent cadres ou dirigeants</td>
+<td>Crédit Agricole Immobilier, Finexial, CD2I</td>
+</tr>
+<tr>
+<td>Les vendeurs</td>
+<td>Agents, commerciaux et managers que j'ai recrutés ou côtoyés</td>
+<td>Finexial, CD2I, Wealth A7</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ce qu'il est.</strong> Des milliers de chefs d'entreprise et de particuliers en Occitanie. Ce sont mes anciens clients et mes anciens prospects. Je les ai rencontrés, au téléphone ou en rendez-vous. Ils connaissent ma voix et mon nom.</p>
+<p><strong>Comment il est organisé : en deux parties.</strong> Je ne les mélange pas, et je ne les tiens pas de la même façon.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>La partie</th>
+<th>Ce que c'est</th>
+<th>Comment je la tiens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ma base professionnelle</td>
+<td>Des chefs d'entreprise et des prescripteurs, classés par secteur et par zone.</td>
+<td>Tenue dans les règles : les coordonnées sont vérifiées, avec leur source et leur date, et les oppositions sont respectées.</td>
+</tr>
+<tr>
+<td>Mon cercle relationnel</td>
+<td>Des gens que je connais personnellement : anciens clients, relations d'affaires, connaissances.</td>
+<td>Je les appelle comme on appelle quelqu'un qu'on connaît : par mon nom, avec une vraie raison.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Les deux sont à jour : qui est qui, qui dirige quoi aujourd'hui, qui connaît qui.</p>
+<p><strong>Comment je l'active.</strong> Je les rappelle moi-même. Pas un message de masse : un appel, avec une raison juste. Une cession, un recrutement, un nouveau besoin. Mes radars me donnent cette raison, mon réseau me donne la porte ouverte.</p>
+<p><strong>Ce qu'il n'est pas.</strong> Ce n'est pas un fichier acheté, ni un fichier que je vous transmets. C'est une relation, et elle passe par moi.</p>
+<p><strong>Ce qu'il vous apporte, au-delà des ventes.</strong></p>
+<ul>
+<li>Des rendez-vous dès la première semaine, sans attendre que la marque soit connue.</li>
+<li>Des recommandations : un client satisfait m'ouvre la porte de son expert-comptable, et l'inverse.</li>
+<li>Des candidats : quand il faut recruter, je sais où sont les bons vendeurs.</li>
+<li>Une lecture du terrain : avant de lancer une offre, je peux demander à dix dirigeants ce qu'ils en pensent.</li>
+</ul>
+<p>Vous y gagnez : une équipe qui démarre avec des portes déjà ouvertes, pendant que vos outils et votre marque font le reste.</p></section>
+<p class="chap" aria-hidden="true">III · Ce que j’apporte</p>
+<section id="ce-que-vous-verrez-des-le-premier-mois"><h2>Ce que vous verrez dès le premier mois</h2><p>Je ne vous demande pas de me croire. Je vous propose de vérifier, en quatre semaines.</p>
+<ol>
+<li><strong>Semaine 1 : mon réseau.</strong> Je rappelle moi-même mes contacts d'Occitanie. Les premiers rendez-vous arrivent.</li>
+<li><strong>Semaine 1 : la carte de votre marché.</strong> Qui appeler, où, et dans quel ordre.</li>
+<li><strong>Semaines 2 et 3 : vos produits.</strong> Je les apprends avec vos meilleurs vendeurs, sur le terrain.</li>
+<li><strong>Chaque matin : une liste d'appels utiles</strong> pour l'équipe, préparée par mes outils.</li>
+<li><strong>Fin du premier mois : un point chiffré avec vous.</strong> Une carte des écarts, et les 3 ou 4 causes prioritaires. Ce qui marche, ce qui bloque, ce que je change.</li>
+</ol>
+<p><strong>Et ensuite.</strong> À 60 jours, j'ai corrigé les écarts les plus simples : moins d'indicateurs, une cadence commune, les pratiques des meilleurs transmises aux autres. À 90 jours, le rythme est installé, et je vous présente un plan chiffré à 12 mois.</p>
+<p>Je ne vous dirai pas « le premier mois, j'écoute ». Tout le monde le dit. Je vous montre ce que je produis.</p></section>
+<section id="moi-et-l-intelligence-artificielle"><h2>Moi et l&#x27;intelligence artificielle</h2><p>Je me situe au niveau des utilisateurs avancés : je m'en sers chaque jour pour vendre, et je construis mes propres outils avec elle. Tout le monde ne travaille pas avec l'IA de la même façon.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Niveau</th>
+<th>Ce que fait la personne</th>
+<th>Où je suis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 · Curieux</strong></td>
+<td>Essaie un assistant de temps en temps.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>2 · Utilisateur</strong></td>
+<td>Fait rédiger un email, résumer un document.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>3 · Utilisateur avancé</strong></td>
+<td>S'en sert chaque jour, avec méthode, dans son processus de travail.</td>
+<td><strong>Oui</strong></td>
+</tr>
+<tr>
+<td><strong>4 · Bâtisseur</strong></td>
+<td>Construit avec elle ses propres outils, qui tournent sans lui.</td>
+<td><strong>Oui</strong></td>
+</tr>
+<tr>
+<td><strong>5 · Ingénieur</strong></td>
+<td>Développe et entraîne des modèles.</td>
+<td>Non, ce n'est pas mon métier.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ce que ça veut dire concrètement.</strong> Depuis un an, je me forme seul à l'IA. Avec elle, j'ai construit mes radars, ma pile d'appels du matin, mes alertes et mon suivi des relances. Ma propre recherche d'emploi tourne avec : chaque matin, mes outils lisent les offres, trient et préparent ma journée.</p>
+<p><strong>Ce que ça ne veut pas dire.</strong> Je ne suis pas informaticien, et l'IA ne vend à la place de personne. Elle prépare, le commercial décide et garde le contact.</p>
+<p><strong>Vous y gagnez :</strong> une équipe qui passe moins de temps à chercher, et plus de temps en rendez-vous.</p></section>
+<section id="ma-boite-a-outils-en-entier"><h2>Ma boîte à outils, en entier</h2><p>J'ai construit 22 outils et radars. Les voici tous, classés par usage.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Usage</th>
+<th>Outil</th>
+<th>Ce qu'il apporte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repérer</strong></td>
+<td>Radar des entreprises</td>
+<td>Les entreprises à appeler maintenant.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des cessions et nouveaux dirigeants</td>
+<td>Les moments clés du dirigeant : une raison juste d'appeler.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des recrutements</td>
+<td>Les entreprises qui recrutent fort.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des marchés publics</td>
+<td>Les marchés publics de votre secteur.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des chantiers</td>
+<td>Les chantiers qui démarrent, d'après les permis de construire.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des installations libérales</td>
+<td>Les professionnels qui s'installent.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des réseaux</td>
+<td>Les réseaux en développement.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des nouveaux intermédiaires</td>
+<td>Les futurs distributeurs à rencontrer.</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar des viviers</td>
+<td>Où trouver les candidats.</td>
+</tr>
+<tr>
+<td></td>
+<td>Carte « où recruter »</td>
+<td>Les zones où le réseau a besoin de monde.</td>
+</tr>
+<tr>
+<td></td>
+<td>Pack de zone</td>
+<td>Les priorités commerciales d'un secteur.</td>
+</tr>
+<tr>
+<td></td>
+<td>Veille clients</td>
+<td>Un client fragile, repéré avant l'impayé.</td>
+</tr>
+<tr>
+<td><strong>Agir, chaque matin</strong></td>
+<td>Pile d'appels préparée</td>
+<td>Les appels du jour : chacun sait par où commencer.</td>
+</tr>
+<tr>
+<td></td>
+<td>Fiches signal → affaire</td>
+<td>Le fait daté, le besoin possible, la question d'ouverture.</td>
+</tr>
+<tr>
+<td></td>
+<td>Relances justes</td>
+<td>La bonne personne, au bon moment.</td>
+</tr>
+<tr>
+<td></td>
+<td>Envois personnalisés un par un</td>
+<td>Des emails et des SMS écrits pour une personne.</td>
+</tr>
+<tr>
+<td></td>
+<td>Graphe des recommandations</td>
+<td>Qui peut m'introduire auprès de qui.</td>
+</tr>
+<tr>
+<td><strong>Manager et piloter</strong></td>
+<td>Alertes de décrochage</td>
+<td>Accompagner un commercial avant qu'il décroche.</td>
+</tr>
+<tr>
+<td></td>
+<td>Grille de recrutement</td>
+<td>Repérer l'entrepreneur, pas le salarié.</td>
+</tr>
+<tr>
+<td></td>
+<td>Grille de coaching</td>
+<td>Un point fixe de 20 minutes, un axe de travail.</td>
+</tr>
+<tr>
+<td></td>
+<td>Tableau de bord du matin</td>
+<td>L'activité de la veille, les priorités du jour.</td>
+</tr>
+<tr>
+<td></td>
+<td>Suivi des factures et des relances</td>
+<td>Savoir qui doit quoi, et relancer à temps.</td>
+</tr>
+</tbody>
+</table></div>
+<p>S'y ajoutent 46 méthodes de manager : écoute d'appels, revue du lundi, intégration en 21 jours, point mort par commercial, plan d'ouverture d'un secteur en 12 semaines. Elles sont détaillées sur <a href="https://chris230776.github.io/cv-christophe-dura/#outils" target="_blank" rel="noopener">mon CV en ligne</a>.</p></section>
+<section id="les-metiers-que-je-couvre"><h2>Les métiers que je couvre</h2><p>Un poste principal, et tout ce que je prends en plus. Chaque métier a sa preuve.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Métier</th>
+<th>Ma preuve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manager commercial</strong></td>
+<td>50 agents et 5 managers recrutés chez Finexial.</td>
+</tr>
+<tr>
+<td><strong>Chef des ventes, responsable d'agence</strong></td>
+<td>8 ans à la tête de CD2I, 2 implantations.</td>
+</tr>
+<tr>
+<td><strong>Manager de plateau télévente</strong></td>
+<td>30 téléopérateurs chez Finexial, puis 12 chez CD2I.</td>
+</tr>
+<tr>
+<td><strong>Animateur de réseau</strong> (agents, partenaires)</td>
+<td>50 agents indépendants chez Finexial, 6 chez Wealth A7.</td>
+</tr>
+<tr>
+<td><strong>Manager de réseau en assurance</strong></td>
+<td>Top 10 sur 100 chez Allianz, sans portefeuille de départ.</td>
+</tr>
+<tr>
+<td><strong>Commercial B2B auprès des dirigeants</strong></td>
+<td>Objectif de 950 k€ par quadrimestre dépassé la 1re année.</td>
+</tr>
+<tr>
+<td><strong>Recrutement des forces de vente</strong></td>
+<td>Journée de recrutement sur grille, intégration en 21 jours.</td>
+</tr>
+<tr>
+<td><strong>Responsable de centre de profit</strong></td>
+<td>Chiffre d'affaires de 200 000 € à 1 M€ en 8 ans.</td>
+</tr>
+<tr>
+<td><strong>Animation de prescripteurs</strong></td>
+<td>Plus de 50 prescripteurs, 40 % du chiffre d'affaires de CD2I.</td>
+</tr>
+<tr>
+<td><strong>Formation et coaching commercial</strong></td>
+<td>Grille de coaching, accompagnement terrain.</td>
+</tr>
+<tr>
+<td><strong>Recouvrement et négociation</strong></td>
+<td>Impayés clients, banques et fournisseurs, gérés moi-même comme dirigeant.</td>
+</tr>
+<tr>
+<td>Génération de rendez-vous</td>
+<td>+50 % de rendez-vous qualifiés en 18 mois chez CD2I.</td>
+</tr>
+<tr>
+<td>Gestion et trésorerie</td>
+<td>8 ans de compte de résultat et de trésorerie pilotés chez CD2I.</td>
+</tr>
+<tr>
+<td>Relations entreprises et partenariats</td>
+<td>Notaires, experts-comptables, avocats et banquiers animés chez CD2I.</td>
+</tr>
+<tr>
+<td>Vente et négociation en espagnol</td>
+<td>Français et espagnol natifs.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Vous me recrutez pour un poste. Vous avez les autres en plus.</p></section>
+<p class="chap" aria-hidden="true">IV · Mon parcours</p>
+<section id="mon-parcours-annee-par-annee"><h2>Mon parcours, année par année</h2><p>Huit entreprises, une seule ligne : j'ai toujours fait produire des équipes et des réseaux.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Années</th>
+<th>Où</th>
+<th>Mon rôle</th>
+<th>Ce que j'en retiens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-2026</td>
+<td>Cabinet BGL Avocats</td>
+<td>Responsable du développement commercial (mission)</td>
+<td>Une organisation commerciale construite, livrée et transmise.</td>
+</tr>
+<tr>
+<td>2023-2025</td>
+<td>Allianz</td>
+<td>Conseiller clientèle dirigeants, en CDI</td>
+<td>Top 10 sur 100, sans portefeuille de départ.</td>
+</tr>
+<tr>
+<td>2021-2023</td>
+<td>Wealth A7</td>
+<td>Directeur du développement</td>
+<td>6 agents indépendants recrutés et animés, prescripteurs experts-comptables et notaires.</td>
+</tr>
+<tr>
+<td>2013-2021</td>
+<td>CD2I</td>
+<td>Gérant d'un centre de profit</td>
+<td>8 ans de P&amp;L, jusqu'à 25 commerciaux, chiffre d'affaires multiplié par 5.</td>
+</tr>
+<tr>
+<td>2007-2012</td>
+<td>Finexial (groupe LP Promotion)</td>
+<td>Directeur commercial</td>
+<td>50 agents et 5 managers recrutés, plateau de 30 téléopérateurs.</td>
+</tr>
+<tr>
+<td>2003-2006</td>
+<td>VB &amp; Associés</td>
+<td>Associé cogérant</td>
+<td>Ma première équipe : 10 commerciaux.</td>
+</tr>
+<tr>
+<td>1999-2002</td>
+<td>Crédit Agricole Immobilier</td>
+<td>Commercial</td>
+<td>Plus de 150 ventes à des investisseurs.</td>
+</tr>
+<tr>
+<td>1996-1999</td>
+<td>Xerox</td>
+<td>Commercial B2B</td>
+<td>La prospection et la vente aux entreprises.</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="ce-que-je-suis-ce-que-je-ne-suis-pas"><h2>Ce que je suis, ce que je ne suis pas</h2><p>Un cabinet de recrutement m'a résumé ainsi cet automne : « très bon commercial et manager opérationnel ». Je signe. Et je préfère être clair sur le reste.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Je suis</th>
+<th>Je ne suis pas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un vendeur, qui vend encore lui-même.</td>
+<td>Un directeur de siège, loin du terrain.</td>
+</tr>
+<tr>
+<td>Un manager de terrain : je recrute, je forme, je fais produire.</td>
+<td>Un consultant qui rend des recommandations.</td>
+</tr>
+<tr>
+<td>Un ancien gérant : je lis un compte de résultat.</td>
+<td>Un expert de votre produit. Je l'apprendrai avec vos équipes.</td>
+</tr>
+<tr>
+<td>Un utilisateur avancé de l'IA, pour vendre.</td>
+<td>Un informaticien, ni un expert de la donnée.</td>
+</tr>
+<tr>
+<td>Bilingue français et espagnol.</td>
+<td>Un candidat de passage : je cherche la durée.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ce qui m'intéresse, c'est l'exécution : des gens à faire progresser, un chiffre à tenir, des arbitrages à prendre. Je sais où je suis utile : là où mon action se voit dans les résultats.</p></section>
+<section id="ce-que-je-cherche"><h2>Ce que je cherche</h2><p>Un CDI, pour plusieurs années, dans une entreprise à taille humaine qui vend par une équipe ou par un réseau.</p>
+<ul>
+<li><strong>Le poste :</strong> manager commercial terrain, chef des ventes, responsable d'agence, manager de plateau, animateur de réseau, ou commercial à forte valeur auprès des dirigeants.</li>
+<li><strong>L'équipe :</strong> de 5 à 30 personnes, à recruter, former ou faire grandir.</li>
+<li><strong>Le marché :</strong> des clients professionnels ou des dirigeants, un produit qui demande du conseil, de la récurrence.</li>
+<li><strong>La zone :</strong> Toulouse et tout le Sud-Ouest. Plusieurs jours par semaine sur la route ne me font pas peur.</li>
+<li><strong>La date :</strong> je suis disponible immédiatement.</li>
+</ul></section>
+<section id="langues-formation-qualifications"><h2>Langues, formation, qualifications</h2><div class="tbl"><table>
+<thead>
+<tr>
+<th>Domaine</th>
+<th>Détail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Langues</strong></td>
+<td>Français et espagnol natifs. Anglais professionnel (B2).</td>
+</tr>
+<tr>
+<td><strong>Diplômes</strong></td>
+<td>Master 1 Management commercial et BTS Force de vente, ESARC (Labège), en alternance.</td>
+</tr>
+<tr>
+<td><strong>Prospection dans les règles</strong></td>
+<td>Formation SecNumacadémie de l'ANSSI. Une opposition vaut pour toute l'équipe ; chaque appel dit qui appelle et pourquoi.</td>
+</tr>
+<tr>
+<td><strong>Habilitation</strong></td>
+<td>Formé au siège d'Allianz, à Paris : produits, réglementation, protection sociale.</td>
+</tr>
+<tr>
+<td><strong>Permis</strong></td>
+<td>Permis B.</td>
+</tr>
+</tbody>
+</table></div></section>
+<section id="pour-aller-plus-loin"><h2>Pour aller plus loin</h2><ul>
+<li><strong>Ma vidéo de présentation (2 minutes) :</strong> <a href="https://www.loom.com/share/b3d6095a15aa4807b46aeef630b20282" target="_blank" rel="noopener">la regarder</a>.</li>
+<li><strong>Mon CV en ligne, avec toute ma boîte à outils :</strong> <a href="https://chris230776.github.io/cv-christophe-dura/" target="_blank" rel="noopener">l'ouvrir</a>.</li>
+<li><strong>Une démonstration sur votre zone, en 5 minutes :</strong> sur simple demande, en visio. Les données montrées sont anonymes.</li>
+<li><strong>Mes références :</strong> sur demande, dont mon ancien dirigeant chez Wealth A7.</li>
+</ul></section>
+<section id="le-mot-de-la-fin"><h2>Le mot de la fin</h2><p>Je ne cherche pas un refuge. Je fais le chemin inverse : je veux les moyens d'une entreprise, une équipe et un marché, pour réaliser plus grand.</p>
+<p>Ces dernières années m'ont fait découvrir plusieurs univers. Aujourd'hui, je veux mettre ce que j'y ai appris au service d'une équipe et d'une entreprise, pour plusieurs années.</p>
+<p>Mon histoire fait partie de moi. Elle ne définit pas ma valeur.</p>
+<p>Une dernière chose : qu'est-ce qui pourrait encore vous faire hésiter ? Dites-le-moi. Je préfère une question franche à un doute silencieux.</p>
+<p><strong>Christophe Dura</strong></p>
+<p>06 71 06 96 54 · contact@christophe-dura.fr · <a href="https://chris230776.github.io/cv-christophe-dura/" target="_blank" rel="noopener">Mon CV en ligne</a> · <a href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 minutes</a></p></section>
+<section id="sources-des-chiffres" class="sources"><h2>Sources des chiffres</h2><ul>
+<li><a href="https://www.banque-france.fr/fr/statistiques/entreprises/defaillances-dentreprises-2026-08" target="_blank" rel="noopener">Banque de France</a> : défaillances d'entreprises à fin août 2026, publié le 9 octobre 2026.</li>
+<li><a href="https://www.francetravail.org/accueil/actualites/2026/enquete-bmo-2026-france-travail-deploie-sa-strategie-sectorielle-face-a-pres-de-2-3-millions-de-projets-de-recrutement.html?type=article" target="_blank" rel="noopener">France Travail</a> : enquête Besoins en main-d'œuvre 2026, publiée le 21 avril 2026 ; <a href="https://statistiques.francetravail.org/bmo/bmo?fe=R2X80&amp;lc=0&amp;pp=2026&amp;ss=1" target="_blank" rel="noopener">métier « attachés commerciaux »</a>.</li>
+<li><a href="https://www.apec.fr/tendances-emploi-cadre/recrutement-et-pratiques-rh/plus-de-300-000-recrutements-de-cadres-en-2026,-sauf-si-.html" target="_blank" rel="noopener">Apec</a> : prévisions de recrutements de cadres pour 2026, article du 17 juillet 2026.</li>
+<li><a href="https://www.insee.fr/fr/statistiques/9025878" target="_blank" rel="noopener">Insee Première n° 2120</a> : les technologies de l'information et de la communication dans les entreprises en 2025, publié le 21 juillet 2026.</li>
+</ul></section>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="end" id="contact">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#E3B488">On en parle ?</p>
+    <h2>Qu'est-ce qui pourrait encore vous faire hésiter ?</h2>
+    <p class="q">Dites-le-moi. Je préfère une question franche à un doute silencieux.</p>
+    <div class="cta">
+      <a class="btn fill" href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 minutes</a>
+      <a class="btn light" href="https://chris230776.github.io/cv-christophe-dura/" target="_blank" rel="noopener">Mon CV en ligne</a>
+    </div>
+    <div class="contact">
+      <div><span>Téléphone</span><p>06 71 06 96 54</p></div>
+      <div><span>Email</span><p>contact@christophe-dura.fr</p></div>
+      <div><span>Basé à</span><p>Toulouse · tout le Sud-Ouest</p></div>
+    </div>
+    <p class="foot">Christophe Dura · Un métier · Des outils · Un réseau · Page personnelle, partagée sur invitation.</p>
+  </div>
+</section>
+</main>
+
+<a class="totop" id="totop" href="#accueil" aria-label="Revenir en haut">↑</a>
+
+<script>
+(function(){
+  var prog=document.getElementById('prog'),top=document.getElementById('top'),tt=document.getElementById('totop');
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    prog.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+    top.classList.toggle('scrolled',h.scrollTop>8);
+    tt.classList.toggle('show',h.scrollTop>900);
+  }
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+    var links={};document.querySelectorAll('.toc a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.values(links).forEach(function(a){a.classList.remove('on')});var a=links[e.target.id];if(a)a.classList.add('on');}})},{rootMargin:'-20% 0px -70% 0px'});
+    document.querySelectorAll('article section[id]').forEach(function(s){so.observe(s)});
+  } else {document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+  var toc=document.getElementById('toc');
+  function fit(){ if(innerWidth<=980) toc.removeAttribute('open'); else toc.setAttribute('open',''); }
+  fit(); addEventListener('resize',fit);
+  toc.addEventListener('click',function(e){ if(e.target.tagName==='A' && innerWidth<=980) toc.removeAttribute('open'); });
+})();
+</script>
+</body>
+</html>
