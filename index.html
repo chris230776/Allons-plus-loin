@@ -3,12 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Christophe Dura vous parle</title>
+<title>Allons plus loin · Christophe Dura</title>
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="Christophe Dura, manager commercial à Toulouse : une vidéo de 5 minutes, mes schémas et mon édito. Je vends, et je fais vendre. Je change de surface, pas de métier.">
-<meta property="og:title" content="Christophe Dura vous parle">
+<meta property="og:title" content="Allons plus loin · Christophe Dura">
+<meta property="og:url" content="https://chris230776.github.io/Allons-plus-loin/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:description" content="Je vends, et je fais vendre. Je change de surface, pas de métier. Une vidéo de 5 minutes et mon édito.">
-<meta property="og:image" content="img/partage.jpg">
+<meta property="og:image" content="https://chris230776.github.io/Allons-plus-loin/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#F4EEE5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,6 +171,30 @@ article .sources h2{font-size:18px}
 .totop{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:max(18px,env(safe-area-inset-bottom,0px));z-index:40;width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-decoration:none;font:700 18px/1 var(--sans);opacity:0;pointer-events:none;transition:opacity .2s}
 .totop.show{opacity:1;pointer-events:auto}
 
+/* triangle image / cartes */
+.tri-img{margin:36px 0 0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
+.tri-img+.tri-cards{display:none}
+/* premier mois */
+.pm{padding:24px 0 96px}
+.pm h2{font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.025em}
+.pm-sub{font:500 19px/1.5 var(--sans);color:var(--ink2);margin:16px 0 40px;max-width:56ch}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:3px solid var(--copper)}
+.steps li{padding:22px 20px 0 0;position:relative;min-width:0}
+.steps li::before{content:"";position:absolute;top:-9px;left:0;width:15px;height:15px;border-radius:50%;background:var(--copper);border:3px solid var(--paper)}
+.steps span{display:block;font:800 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--copper)}
+.steps b{display:block;font:800 19px/1.25 var(--sans);margin:8px 0 6px}
+.steps p{font:500 15px/1.45 var(--sans);color:var(--ink2);margin:0}
+.pm-next{font:500 17px/1.55 var(--sans);color:var(--ink2);margin:40px 0 0;max-width:70ch;padding:20px 24px;background:var(--card);border-left:4px solid var(--copper);border-radius:0 8px 8px 0}
+.pm-next b{color:var(--ink)}
+.read{font:600 14px/1.5 var(--sans);color:var(--muted);margin:14px 0 0}
+/* visionneuse */
+#lb{position:fixed;inset:0;z-index:100;background:rgba(13,22,38,.94);display:none;overflow:auto;padding:max(16px,env(safe-area-inset-top,0px)) 16px 16px;cursor:zoom-out;-webkit-overflow-scrolling:touch}
+#lb.open{display:block}
+#lb img{margin:0 auto;max-width:min(1500px,100%);height:auto;border-radius:6px;background:#fff}
+#lb button{position:fixed;top:max(14px,env(safe-area-inset-top,0px));right:14px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--navy);font:800 22px/1 var(--sans);cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+@media (max-width:980px){.steps{grid-template-columns:1fr;border-top:0;border-left:3px solid var(--copper)}.steps li{padding:0 0 26px 26px}.steps li::before{top:2px;left:-9px}.portrait{max-width:230px}}
+@media (max-width:760px){.tri-img{display:none}.tri-img+.tri-cards{display:grid}.pm{padding-bottom:64px}}
+
 /* apparition */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .rv.in{opacity:1;transform:none}
@@ -202,6 +232,7 @@ article .sources h2{font-size:18px}
     <nav aria-label="Navigation">
       <a href="#video">La vidéo</a>
       <a href="#schemas">Les schémas</a>
+      <a href="#premier-mois">Le premier mois</a>
       <a href="#edito">L'édito</a>
       <a class="btn fill" href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 min</a>
     </nav>
@@ -212,7 +243,7 @@ article .sources h2{font-size:18px}
 <section class="hero">
   <div class="wrap hgrid">
     <div class="rv">
-      <p class="eyebrow">Un métier · Des outils · Un réseau</p>
+      <p class="eyebrow">Allons plus loin · Un métier · Des outils · Un réseau</p>
       <h1>Je vends,<br>et je fais vendre.</h1>
       <p class="lead">Je change de surface, pas de métier.</p>
       <p class="who"><b>Christophe Dura</b> · Manager commercial · Toulouse et Sud-Ouest</p>
@@ -258,6 +289,7 @@ article .sources h2{font-size:18px}
         </ol>
         <div class="cta">
           <a class="btn fill" href="https://cal.com/christophe-dura-grw4ws/15min" target="_blank" rel="noopener">Réserver 15 minutes</a>
+          <a class="btn light" href="#premier-mois">Le premier mois</a>
         </div>
       </div>
     </div>
@@ -268,6 +300,7 @@ article .sources h2{font-size:18px}
   <div class="wrap">
     <p class="eyebrow rv">Mon triangle</p>
     <h2 class="rv">Trois pointes, un résultat au centre.</h2>
+    <figure class="fig tri-img rv"><a href="img/triangle.jpg" aria-label="Agrandir le triangle"><img src="img/triangle.jpg" alt="Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite." loading="lazy" width="1800" height="720"></a></figure>
     <div class="tri-cards rv">
       <div><b>1 · Un métier</b><span>Recruter, former, faire vendre, gérer.</span><i>Opérationnel dès le premier jour.</i></div>
       <div><b>2 · Des outils</b><span>Construits par moi, et 8 ans de compte de résultat.</span><i>L'équipe sait qui appeler.</i></div>
@@ -285,18 +318,34 @@ article .sources h2{font-size:18px}
 <p><strong>Le détail, sans rien oublier.</strong> Chaque cercle, ouvert en entier : 20 savoir-faire de métier, 23 outils, 11 points de conformité et de sécurité, 13 cercles de réseau.</p></div>
     <div class="sgrid">
       <div class="scard rv">
-        <figure class="fig"><a href="img/metiers.jpg" target="_blank" rel="noopener" aria-label="Agrandir le grand cercle"><img src="img/metiers.jpg" alt="Tous les métiers que couvre Christophe Dura : un métier, des outils, la conformité et la sécurité, un réseau, et les surfaces déjà jouées" loading="lazy" width="1600" height="2060"></a></figure>
+        <figure class="fig"><a href="img/metiers.jpg" aria-label="Agrandir le grand cercle"><img src="img/metiers.jpg" alt="Tous les métiers que couvre Christophe Dura : un métier, des outils, la conformité et la sécurité, un réseau, et les surfaces déjà jouées" loading="lazy" width="1600" height="2060"></a></figure>
         <h3>Le grand cercle</h3>
         <p>Mon métier au cœur, puis mes outils, la conformité, mon réseau. Tout autour, les surfaces déjà jouées.</p>
-        <a class="zoom" href="img/metiers.jpg" target="_blank" rel="noopener">Agrandir ↗</a>
+        <a class="zoom" href="img/metiers.jpg">Agrandir ⤢</a>
       </div>
       <div class="scard rv">
-        <figure class="fig"><a href="img/boite-complete.jpg" target="_blank" rel="noopener" aria-label="Agrandir la boîte complète"><img src="img/boite-complete.jpg" alt="Ma boîte complète : 20 savoir-faire, 23 outils, 11 points de conformité et de sécurité, 13 cercles de réseau, autour de « je produis vite »" loading="lazy" width="1600" height="1820"></a></figure>
+        <figure class="fig"><a href="img/boite-complete.jpg" aria-label="Agrandir la boîte complète"><img src="img/boite-complete.jpg" alt="Ma boîte complète : 20 savoir-faire, 23 outils, 11 points de conformité et de sécurité, 13 cercles de réseau, autour de « je produis vite »" loading="lazy" width="1600" height="1820"></a></figure>
         <h3>Ma boîte complète</h3>
         <p>Chaque cercle ouvert en entier : 20 savoir-faire, 23 outils, 11 points de conformité, 13 cercles de réseau.</p>
-        <a class="zoom" href="img/boite-complete.jpg" target="_blank" rel="noopener">Agrandir ↗</a>
+        <a class="zoom" href="img/boite-complete.jpg">Agrandir ⤢</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="pm" id="premier-mois">
+  <div class="wrap">
+    <p class="eyebrow rv">Ce que vous verrez</p>
+    <h2 class="rv">Mon premier mois, semaine par semaine.</h2>
+    <p class="pm-sub rv">Je ne vous demande pas de me croire. Je vous propose de vérifier, en quatre semaines.</p>
+    <ol class="steps">
+      <li class="rv"><span>Semaine 1</span><b>Mon réseau</b><p>Je rappelle moi-même mes contacts d'Occitanie. Les premiers rendez-vous arrivent.</p></li>
+      <li class="rv"><span>Semaine 1</span><b>La carte de votre marché</b><p>Qui appeler, où, et dans quel ordre.</p></li>
+      <li class="rv"><span>Semaines 2 et 3</span><b>Vos produits</b><p>Je les apprends avec vos meilleurs vendeurs, sur le terrain.</p></li>
+      <li class="rv"><span>Chaque matin</span><b>Une liste d'appels utiles</b><p>Pour toute l'équipe, préparée par mes outils.</p></li>
+      <li class="rv"><span>Fin du mois</span><b>Un point chiffré avec vous</b><p>Ce qui marche, ce qui bloque, ce que je change.</p></li>
+    </ol>
+    <p class="pm-next rv"><b>Et ensuite.</b> À 60 jours, les écarts les plus simples sont corrigés. À 90 jours, le rythme est installé, et je vous présente un plan chiffré à 12 mois.</p>
   </div>
 </section>
 
@@ -305,6 +354,7 @@ article .sources h2{font-size:18px}
     <div class="edito-head rv">
       <p class="eyebrow">L'édito</p>
       <h2>Christophe Dura vous parle.</h2>
+      <p class="read">Lecture complète : 20 minutes · ou allez droit au chapitre qui vous intéresse, avec le sommaire.</p>
       <div class="lede"><p><strong>Je vends, et je fais vendre. Je change de surface, pas de métier.</strong> Voici ce que j'apporte à une entreprise qui veut grandir, tenir et s'adapter.</p></div>
     </div>
     <div class="egrid">
@@ -453,7 +503,7 @@ article .sources h2{font-size:18px}
 <p><strong>Vous y gagnez :</strong> quelqu'un qui produit vite, pendant qu'il apprend votre secteur.</p></section>
 <p class="chap" aria-hidden="true">II · Mon triangle</p>
 <section id="mon-triangle-un-metier-des-outils-un-reseau"><h2>Mon triangle : un métier, des outils, un réseau</h2><p>Tout ce que je viens d'écrire tient en trois mots : un métier, des outils, un réseau.</p>
-<figure class="fig"><a href="img/triangle.jpg" target="_blank" rel="noopener" aria-label="Agrandir : Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite."><img src="img/triangle.jpg" alt="Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite." loading="lazy"></a></figure>
+<figure class="fig"><a href="img/triangle.jpg" aria-label="Agrandir : Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite."><img src="img/triangle.jpg" alt="Mon triangle : un métier, des outils, un réseau. Au centre : je produis vite." loading="lazy"></a></figure>
 <div class="tbl"><table>
 <thead>
 <tr>
@@ -1074,6 +1124,8 @@ article .sources h2{font-size:18px}
 </section>
 </main>
 
+<div id="lb" role="dialog" aria-label="Schéma agrandi"><button type="button" aria-label="Fermer">×</button><img alt=""></div>
+
 <a class="totop" id="totop" href="#accueil" aria-label="Revenir en haut">↑</a>
 
 <script>
@@ -1093,6 +1145,15 @@ article .sources h2{font-size:18px}
     var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.values(links).forEach(function(a){a.classList.remove('on')});var a=links[e.target.id];if(a)a.classList.add('on');}})},{rootMargin:'-20% 0px -70% 0px'});
     document.querySelectorAll('article section[id]').forEach(function(s){so.observe(s)});
   } else {document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+  var lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="img/"]');
+    if(a){e.preventDefault();lbi.src=a.getAttribute('href');lbi.alt=(a.querySelector('img')||{}).alt||'';lb.classList.add('open');lb.scrollTop=0;document.body.style.overflow='hidden';return;}
+    if(lb.classList.contains('open')&&(e.target===lb||e.target===lbi||e.target.tagName==='BUTTON'))closeLb();
+  });
+  addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
   var toc=document.getElementById('toc');
   function fit(){ if(innerWidth<=980) toc.removeAttribute('open'); else toc.setAttribute('open',''); }
   fit(); addEventListener('resize',fit);
